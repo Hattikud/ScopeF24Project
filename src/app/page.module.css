@@ -1,0 +1,36 @@
+/*@import url('../../public/image.png');*/
+.page{
+    background-size: cover;
+    background-position: center;
+    height: 98vh;
+    /*justify-content: center; Center horizontally */
+    align-items: flex-start; /* Align content to the top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative; /* Allows absolute positioning for child elements */
+}
+
+
+.title {
+    font-size: 80px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    color: #B22222; /* Primary color of the bubble text */
+    text-shadow: 
+        2px 2px 0 #000000,  /* Creates a black outline */
+        -2px -2px 0 #000000,
+        2px -2px 0 #000000,
+        -2px 2px 0 #000000, 
+        4px 4px 5px rgba(0, 0, 0, 0.7); /* Adds a subtle 3D shadow */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 100px; /* Positions text at the very top */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the text horizontally */
+    opacity: 1;
+}

@@ -1,0 +1,25 @@
+.container {
+    max-height: 95vh;
+    background-color: white;
+    color: black;
+  }
+    
+  .wrapper {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+  
+  .background-image {
+    /* background-image: url('https://live.staticflickr.com/65535/50326773388_daae5751ca_h.jpg'); */
+    background-size: cover;
+    background-position: center;
+    height: 98vh;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }  

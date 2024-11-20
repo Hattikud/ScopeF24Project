@@ -1,0 +1,7 @@
+.SubmitButton {
+  padding: 10px 24px; 
+  font-size: 20px;
+  background-color: grey;
+  border-radius: 8px;
+  margin: 0.5rem;
+}

@@ -1,0 +1,23 @@
+.GameBoard {
+    display: grid;
+}
+
+.Row1 {
+    display: flex;
+}
+
+.Row2 {
+    display: flex;
+}
+
+.Row3 {
+    display: flex;
+}
+
+.Row4 {
+    display: flex;
+}
+
+.Buttons {
+    display: flex;
+}
