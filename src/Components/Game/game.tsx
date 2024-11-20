@@ -38,7 +38,7 @@ export default function Game() {
             <Square ID={1} squareText="Hello" />
         </div>
       </div>
-      
+
       <div className={styles.Buttons}>
           <SubmitButton Submitted={submitted} />
         </div>

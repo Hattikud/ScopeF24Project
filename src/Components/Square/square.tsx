@@ -13,8 +13,8 @@ const press = () => {
 
 const Square: React.FC<SquareProps> = ({ ID, squareText }) => {
     return (
-        <button onClick={press} className={styles.SubmitButton} >
-            squareText
+        <button onClick={press} className={styles.Button}>
+            {squareText}
         </button>
     );
 };
