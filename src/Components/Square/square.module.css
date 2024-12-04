@@ -1,11 +1,15 @@
 .Button {
+    display: flex;
     padding: 2rem 4rem; 
     font-size: 2rem;
     background-color: lightgray;
     border-radius: 8px;
     margin: 0.25rem;
-    height: 0.25rem;
-    width: 0.5rem;
+    height: 0.4rem;
+    width: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .Button.Selected {
