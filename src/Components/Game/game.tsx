@@ -50,6 +50,18 @@ export default function Game() {
           ...prev,
           ...selectedPairs.map(([text]) => text),
         ]);
+        if (selectedPairs[0][1] == "1"){
+            alert("Enrolled in CSCI 170");
+        }
+        else if (selectedPairs[0][1] == "2"){
+            alert("Seniors");
+        }
+        else if (selectedPairs[0][1] == "3"){
+            alert("E-Board");
+        }
+        else {
+            alert("International People");
+        }
       } else {
         setLives((prev) => {
           const newLives = prev - 1;
