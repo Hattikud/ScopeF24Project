@@ -12,22 +12,22 @@ export default function Game() {
   const [gameOver, setGameOver] = useState(false);
 
   const dummyGrid = [
-    { text: "cat1a", connection: "1" },
-    { text: "cat1b", connection: "1" },
-    { text: "cat2a", connection: "2" },
-    { text: "cat2b", connection: "2" },
-    { text: "cat3a", connection: "3" },
-    { text: "cat3b", connection: "3" },
-    { text: "cat4a", connection: "4" },
-    { text: "cat4b", connection: "4" },
-    { text: "cat1c", connection: "1" },
-    { text: "cat2c", connection: "2" },
-    { text: "cat3c", connection: "3" },
-    { text: "cat4c", connection: "4" },
-    { text: "cat1d", connection: "1" },
-    { text: "cat2d", connection: "2" },
-    { text: "cat3d", connection: "3" },
-    { text: "cat4d", connection: "4" },
+    { text: "Ellie", connection: "1" },
+    { text: "Max", connection: "1" },
+    { text: "Malachi", connection: "1" },
+    { text: "Kaylee", connection: "1" },
+    { text: "Lucas", connection: "2" },
+    { text: "Josh", connection: "2" },
+    { text: "Ryan", connection: "2" },
+    { text: "Hallie", connection: "2" },
+    { text: "Gabby", connection: "3" },
+    { text: "Joyce", connection: "3" },
+    { text: "Deborah", connection: "3" },
+    { text: "Adit", connection: "3" },
+    { text: "Anjolie", connection: "4" },
+    { text: "John", connection: "4" },
+    { text: "Valeria", connection: "4" },
+    { text: "4th Intl Person", connection: "4" },
   ];
 
   const handleSquareClick = (squareText: string, connection: string) => {
