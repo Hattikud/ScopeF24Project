@@ -4,6 +4,8 @@
     background-color: lightgray;
     border-radius: 8px;
     margin: 0.25rem;
+    height: 0.25rem;
+    width: 0.5rem;
 }
 
 .Button.Selected {

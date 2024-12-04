@@ -13,21 +13,21 @@ export default function Game() {
 
   const dummyGrid = [
     { text: "Ellie", connection: "1" },
+    { text: "Joyce", connection: "3" },
+    { text: "Ryan", connection: "2" },
     { text: "Max", connection: "1" },
-    { text: "Malachi", connection: "1" },
-    { text: "Kaylee", connection: "1" },
+    { text: "John", connection: "4" },
     { text: "Lucas", connection: "2" },
     { text: "Josh", connection: "2" },
-    { text: "Ryan", connection: "2" },
+    { text: "Valeria", connection: "4" },
     { text: "Hallie", connection: "2" },
     { text: "Gabby", connection: "3" },
-    { text: "Joyce", connection: "3" },
     { text: "Deborah", connection: "3" },
+    { text: "Malachi", connection: "1" },
     { text: "Adit", connection: "3" },
     { text: "Anjolie", connection: "4" },
-    { text: "John", connection: "4" },
-    { text: "Valeria", connection: "4" },
     { text: "4th Intl Person", connection: "4" },
+    { text: "Kaylee", connection: "1" },
   ];
 
   const handleSquareClick = (squareText: string, connection: string) => {
