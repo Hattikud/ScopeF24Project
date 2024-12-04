@@ -83,7 +83,7 @@ export default function Game() {
     <div>
       <div className={styles.Lives}>
         <h1>Lives Remaining: {lives}</h1>
-        {gameOver && <h2 className={styles.GameOver}>Game Over!</h2>}
+        {gameOver && <h2 className={styles.GameOver}>Categories were CSCI 170 students, Seniors, E-Board, and International Students!</h2>}
       </div>
       <div className={styles.GameBoard}>
         {[0, 1, 2, 3].map((rowIndex) => (
