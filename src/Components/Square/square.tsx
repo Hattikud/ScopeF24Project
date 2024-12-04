@@ -1,22 +1,32 @@
-import React from 'react';
-import styles from "./square.module.css"; 
-
+import React from "react";
+import styles from "./square.module.css";
 
 interface SquareProps {
-    ID: number;
-    squareText: string;
+  squareText: string;
+  connection: string;
+  isSelected: boolean;
+  isLocked: boolean;
+  onClick: (squareText: string, connection: string) => void;
 }
 
-const press = () => {
-    // Does Nothing
-}
+const Square: React.FC<SquareProps> = ({ squareText, connection, isSelected, isLocked, onClick }) => {
+  const handleClick = () => {
+    if (!isLocked) {
+      onClick(squareText, connection);
+    }
+  };
 
-const Square: React.FC<SquareProps> = ({ ID, squareText }) => {
-    return (
-        <button onClick={press} className={styles.Button}>
-            {squareText}
-        </button>
-    );
+  return (
+    <button
+      onClick={handleClick}
+      className={`${styles.Button} ${isSelected ? styles.Selected : ""} ${
+        isLocked ? styles.Locked : ""
+      }`}
+      disabled={isLocked}
+    >
+      {squareText}
+    </button>
+  );
 };
 
 export default Square;

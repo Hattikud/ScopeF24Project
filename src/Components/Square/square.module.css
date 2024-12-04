@@ -5,3 +5,13 @@
     border-radius: 8px;
     margin: 0.25rem;
 }
+
+.Button.Selected {
+    background-color: darkgray;
+    border: 2px solid black;
+}
+
+.Button.Locked {
+    background-color: lightgreen;
+    cursor: not-allowed;
+}

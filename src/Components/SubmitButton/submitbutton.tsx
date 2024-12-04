@@ -1,21 +1,23 @@
-import React from 'react';
-import styles from "./submitbutton.module.css"; 
-
+import React from "react";
+import styles from "./submitbutton.module.css";
 
 interface SubmitButtonProps {
-    Submitted: boolean
+  Submitted: boolean;
+  onClick: () => void;
+  disabled: boolean;
 }
 
-const submitPress = () => {
-    // Does Nothing
-}
-
-const SubmitButton: React.FC<SubmitButtonProps> = ({ Submitted }) => {
-    return (
-        <button onClick={submitPress} className={styles.SubmitButton} style={{ display: Submitted ? 'none' : 'flex' }}>
-            Submit
-        </button>
-    );
+const SubmitButton: React.FC<SubmitButtonProps> = ({ Submitted, onClick, disabled }) => {
+  return (
+    <button
+      onClick={onClick}
+      className={styles.SubmitButton}
+      style={{ display: "flex" }}
+      disabled={disabled}
+    >
+      Submit
+    </button>
+  );
 };
 
 export default SubmitButton;
